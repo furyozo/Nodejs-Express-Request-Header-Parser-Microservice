@@ -8,7 +8,7 @@ $ node index.js
 ```
 
 ### Live version
-a live version of the application is available at https://guttural-supermarket.glitch.me/.
+a live version of the application is available at https://coal-root.glitch.me/
 
 ### Objectives
 1. Objective: Build a full stack JavaScript app that is functionally similar to this: https://cryptic-ridge-9197.herokuapp.com/api/whoami/ and deploy it to Glitch.
