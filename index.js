@@ -5,7 +5,8 @@ const app = express()
  * default route returns user IP, language and OS
  */
 app.get('/', (req, res) => {
-  var ip = req.ip
+  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  ip = ip.split(",")[0]
   var lang = req.headers["accept-language"].split(",")[0]
   var sw = req.headers['user-agent'].split(")")[0].split("(")[1]
   res.send({
